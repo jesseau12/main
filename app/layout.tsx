@@ -4,14 +4,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Coastal Family Outdoors | Southeast Parks, Playgrounds & Trails',
+  title: 'Savannah Boat Ramps | Local Launch Guide',
   description:
-    'Find family-friendly parks, playgrounds, dog parks, and trails across Savannah and other Southeast cities.',
-  metadataBase: new URL('https://example.com'),
+    'Search Savannah-area boat ramps by county and amenities. Find addresses, launch notes, and official links.',
+  metadataBase: new URL('https://savannahboatramp.com'),
   openGraph: {
-    title: 'Coastal Family Outdoors',
-    description:
-      'Plan outdoor adventures with curated parks, playgrounds, dog parks, and trails in the Southeast.',
+    title: 'Savannah Boat Ramps',
+    description: 'Find launch sites, amenities, and official listings across the Savannah area.',
     type: 'website'
   }
 };
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-brand-sand">
+      <body className="min-h-screen">
         <Header />
         <main className="container-page py-10">{children}</main>
         <Footer />
